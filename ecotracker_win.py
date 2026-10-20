@@ -1,3 +1,5 @@
+# This script emulates an eco tracker based on shelly values that are provided as json
+
 import http.server
 import json
 import urllib.request
@@ -6,7 +8,7 @@ import socket
 from zeroconf import IPVersion, ServiceInfo, Zeroconf
 
 # --- KONFIGURATION ---
-SHELLY_IP = "192.168.178.97"  # <-- IP deines Shelly Pro 3EM anpassen
+SHELLY_IP = "192.168.100.100"  # <-- IP deines Shelly Pro 3EM anpassen
 LISTEN_PORT = 80
 
 def get_local_ip():
